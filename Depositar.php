@@ -1,5 +1,5 @@
 <?php
-function Depositar(&$saldo) //& antes da varíavel, irá modificar a variável original, e não apenas uma cópia dela
+function Depositar(float &$saldo): float //& antes da varíavel, irá modificar a variável original, e não apenas uma cópia dela
 {
     echo "Digite o valor a ser depositado: ";
     $valor = (float) fgets(STDIN);

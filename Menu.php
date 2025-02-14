@@ -1,5 +1,5 @@
 <?php
-function Menu(){
+function Menu(): void{
     echo "Digite a opção desejada:
     1 - Ver saldo
     2 - Sacar

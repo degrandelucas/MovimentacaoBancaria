@@ -1,5 +1,5 @@
 <?php
-function Sacar(&$saldo) //& antes da varíavel, irá modificar a variável original, e não apenas uma cópia dela
+function Sacar(float &$saldo): float //& antes da varíavel, irá modificar a variável original, e não apenas uma cópia dela
 {
     echo "Digite o valor a ser sacado: ";
     $valor = (float) fgets(STDIN);
