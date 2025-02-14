@@ -10,7 +10,7 @@ $saldo = 1000;
 do {
     echo "Usuário: $usuario\n" . "Saldo: $saldo\n";
     Menu();
-    $escolha = fgets(STDIN);
+    $escolha = (int) fgets(STDIN);
 
     switch ($escolha) {
         case 1:
