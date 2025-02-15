@@ -1,5 +1,5 @@
 <?php
-function MostrarSaldo(float &$saldo): void
+function MostrarSaldo(string $usuario, float &$saldo): void
 {
-    echo "Seu saldo atual: $saldo\n";
+    echo "$usuario, seu saldo atual: $saldo\n";
 }

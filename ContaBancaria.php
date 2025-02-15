@@ -7,14 +7,15 @@ include 'MostrarSaldo.php';
 $usuario = "Lucas";
 $saldo = 1000;
 
+echo "Usuário: $usuario\n" . "Saldo: $saldo\n";
+
 do {
-    echo "Usuário: $usuario\n" . "Saldo: $saldo\n";
     Menu();
     $escolha = (int) fgets(STDIN);
 
     switch ($escolha) {
         case 1:
-            MostrarSaldo($saldo);
+            MostrarSaldo($usuario, $saldo);
             break;
         case 2:
             Sacar($saldo);
